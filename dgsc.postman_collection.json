@@ -1,0 +1,464 @@
+{
+	"info": {
+		"_postman_id": "422b10e1-f69d-42c8-b19b-fdc57a133f2d",
+		"name": "dgsc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "27521588"
+	},
+	"item": [
+		{
+			"name": "submission/outcomeReports",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 5804098e0371efcac691cde7ee6669117b0da4502fb0e879a0c8440a4d54f322ee964c1c533b1b7e46890dec4e07750621dadc682020d09eb3307f4af00f1a90",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"offset\": 10,\r\n    \"limit\":20,\r\n    \"filterColumns\": [\"rt.ru_name\", \"rs.id\"],\r\n    \"value\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}api/submission/outcomeReports"
+			},
+			"response": []
+		},
+		{
+			"name": "submission/outcomeReports Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 5804098e0371efcac691cde7ee6669117b0da4502fb0e879a0c8440a4d54f322ee964c1c533b1b7e46890dec4e07750621dadc682020d09eb3307f4af00f1a90",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"offset\": 10,\r\n    \"limit\":20,\r\n    \"filterColumns\": [\"rt.ru_name\", \"rs.id\"],\r\n    \"value\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/api/integration/submitReports"
+			},
+			"response": []
+		},
+		{
+			"name": "submission/outcomeReports Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 0ee7861541f1951b1fc91b218754a3266355acaac855d59d903fe65258c300a4238f6d24b93d59d5d5c6591d021912b7dbc5c321a7b73209145a67cd827de6b6",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"offset\": 10,\r\n    \"limit\": 20,\r\n    \"filterColumns\": [\r\n        \"reportSender.reportTemplate.id\",\r\n        \"reportSender.reportTemplate.ru_name\",\r\n        \"reportSender.reportSubmissionPeriod.ru_name\"\r\n    ],\r\n    \"value\": \"1300\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/api/submission/outcomeReportsHistory"
+			},
+			"response": []
+		},
+		{
+			"name": "submission/incomeReportsHistory",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 0ee7861541f1951b1fc91b218754a3266355acaac855d59d903fe65258c300a4238f6d24b93d59d5d5c6591d021912b7dbc5c321a7b73209145a67cd827de6b6",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"offset\": 0,\r\n    \"limit\":20,\r\n    \"filterColumns\": [],\r\n    \"value\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/api/submission/incomeReportsHistory"
+			},
+			"response": []
+		},
+		{
+			"name": "submission/incomeReports",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 0ee7861541f1951b1fc91b218754a3266355acaac855d59d903fe65258c300a4238f6d24b93d59d5d5c6591d021912b7dbc5c321a7b73209145a67cd827de6b6",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"offset\": 0,\r\n    \"limit\":20,\r\n    \"filterColumns\": [],\r\n    \"value\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/api/submission/incomeReports"
+			},
+			"response": []
+		},
+		{
+			"name": "submission/reportDraftsList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 5804098e0371efcac691cde7ee6669117b0da4502fb0e879a0c8440a4d54f322ee964c1c533b1b7e46890dec4e07750621dadc682020d09eb3307f4af00f1a90",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"offset\": 0,\r\n    \"limit\":20,\r\n    \"filterColumns\": [\"rpt.id\", \"rpt.ru_name\"],\r\n    \"value\":\"testtest2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/api/submission/reportDraftsList"
+			},
+			"response": []
+		},
+		{
+			"name": "submission/reportDraftsList Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 5804098e0371efcac691cde7ee6669117b0da4502fb0e879a0c8440a4d54f322ee964c1c533b1b7e46890dec4e07750621dadc682020d09eb3307f4af00f1a90",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"offset\": 0,\r\n    \"limit\":20,\r\n    \"filterColumns\": [\"ra.id\"],\r\n    \"value\":\"testtest2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/api/submission/incomeReports"
+			},
+			"response": []
+		},
+		{
+			"name": "admin/reportInfo",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 0af336dbb612f088ea53ba904fa49a136c2948b6e862d91cedd30eca5b547baba297785e3198d496566cf221759fe615db2920a71e41a5e3c83dd9b960bd5d1d",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/api/admin/reportInfo?reportTemplateID=130001",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"admin",
+						"reportInfo"
+					],
+					"query": [
+						{
+							"key": "reportTemplateID",
+							"value": "130001"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin/updateReportSenderDatePeriod",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 1373b1deac80e6481b21fb7354f3c37204fad16b6b08ff3faabc81d78a041ea38e121bec67664f6e4761a04f9b918fb681cafdc48f107397e4c85fa8fde215c4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"reportTemplate_id\": \"testing\",\r\n    \"submissionPeriodDate\": \"2022\",\r\n    \"reportSenderId\":\"test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8888/api/admin/updateReportSenderDatePeriod"
+			},
+			"response": []
+		},
+		{
+			"name": "admin/getReportAggregationTree",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 1373b1deac80e6481b21fb7354f3c37204fad16b6b08ff3faabc81d78a041ea38e121bec67664f6e4761a04f9b918fb681cafdc48f107397e4c85fa8fde215c4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"reportTemplate_id\": \"testing\",\r\n    \"submissionPeriodDate\": \"2022\",\r\n    \"reportSenderId\":\"test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/admin/getReportAggregationTree?reportTemplateId=130015&reportSubmissionId=2024-monthly-4",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"admin",
+						"getReportAggregationTree"
+					],
+					"query": [
+						{
+							"key": "reportTemplateId",
+							"value": "130015"
+						},
+						{
+							"key": "reportSubmissionId",
+							"value": "2024-monthly-4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin/addNewReportSender",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer c7c6a96ecfd17d7fd9ec71a1265e3df976eb77043890a90bf181f9efed3708c06b3d56f9297da706f4256319a8bef4824a67e8d0db43e60b2b161772c609fa8b",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"reportTemplateId\": \"testing\",\r\n    \"submissionPeriod\": \"2021\",\r\n    \"submissionStartDate\": \"2021-01-01 23:00:00\",\r\n    \"submissionEndDate\": \"2021-12-31 23:00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/api/admin/addNewReportSender"
+			},
+			"response": []
+		},
+		{
+			"name": "loginLocal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"\",\r\n    \"password\":\"\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/account/login"
+			},
+			"response": []
+		},
+		{
+			"name": "localNPo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"\",\r\n    \"password\":\"\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/account/login"
+			},
+			"response": []
+		},
+		{
+			"name": "loginOnline",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"\",\r\n    \"password\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}api/account/login"
+			},
+			"response": []
+		},
+		{
+			"name": "create_user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 19ed11cfbe8aa11976dc167a26ccdda47456cc3e0a278125f7a2232934aa9d9f7179a3a5ba49d010b62652daec4e102afb329d175da5980b71e3a075d563f20e",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"131240019294\",\r\n    \"password\": \"Ac6@c2AN\",\r\n    \"respondent_bin\": \"131240019294\",\r\n    \"isActive\": \"1\",\r\n    \"role\": \"respondent\",\r\n    \"iin\": \"000000000000\",\r\n    \"respondent_id\": \"084a0268-4646-4351-910c-78fc7da7b01f\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/api/superadmin/createUser"
+			},
+			"response": []
+		},
+		{
+			"name": "admin/cloneSender",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 459d4b79a433c62f468de5d910e07fed2b9f241099fb5f9437ce3e1221174dc07d6371fb5cc75d48afcb8af59c465c103d8e88053086bdc85005b8bee6c28b38",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"senderID\": \"test\",\r\n    \"targetPeriodID\": \"2021\",\r\n    \"targetStartSubmissionDate\": \"2021-05-01 05:00:00\",\r\n    \"targetFinishSubmissionDate\": \"2024-12-01 05:00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/api/admin/cloneSender"
+			},
+			"response": []
+		},
+		{
+			"name": "importQueue",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eddb8062ea5c824b5a8facc3dba42bd3fee254989252dafa6fe55a69487ad4c64a19c51b15b3f306a836d40a381037437c9606ca9831659b934d37683a189e19",
+						"type": "text"
+					}
+				],
+				"url": "{{url}}/api/superadmin/importQueue"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "711d1e395dc790003e7ca5562bb4570376123467a023fcdc1ab8277c0aa1dc8469422a9e817df487f5d9be35d8eb6d30f372d59b16605c42159ad1c8e2b1a7d5"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:8000/api",
+			"type": "string"
+		},
+		{
+			"key": "url_remote",
+			"value": "https://esep.govtec.kz/api",
+			"type": "string"
+		}
+	]
+}
